@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		859F235728AF6290006BE83C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859F235628AF6290006BE83C /* AppDelegate.swift */; };
 		859F235928AF6290006BE83C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859F235828AF6290006BE83C /* SceneDelegate.swift */; };
-		859F235B28AF6290006BE83C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859F235A28AF6290006BE83C /* ViewController.swift */; };
+		859F235B28AF6290006BE83C /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859F235A28AF6290006BE83C /* JoinViewController.swift */; };
 		859F235E28AF6290006BE83C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859F235C28AF6290006BE83C /* Main.storyboard */; };
 		859F236028AF6291006BE83C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859F235F28AF6291006BE83C /* Assets.xcassets */; };
 		859F236328AF6291006BE83C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859F236128AF6291006BE83C /* LaunchScreen.storyboard */; };
+		85EF781928AF6391005AE210 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF781828AF6391005AE210 /* BaseViewController.swift */; };
+		85EF781B28AF64A5005AE210 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF781A28AF64A5005AE210 /* BaseView.swift */; };
+		85EF781E28AF65A7005AE210 /* JoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF781D28AF65A7005AE210 /* JoinView.swift */; };
+		85EF782128AF663A005AE210 /* DarkGrayRadiusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF782028AF663A005AE210 /* DarkGrayRadiusTextField.swift */; };
+		85EF782428AF6A56005AE210 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 85EF782328AF6A56005AE210 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		859F235328AF6290006BE83C /* Netflix_Layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix_Layout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		859F235628AF6290006BE83C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		859F235828AF6290006BE83C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		859F235A28AF6290006BE83C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		859F235A28AF6290006BE83C /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		859F235D28AF6290006BE83C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		859F235F28AF6291006BE83C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		859F236228AF6291006BE83C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		859F236428AF6291006BE83C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85EF781828AF6391005AE210 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		85EF781A28AF64A5005AE210 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		85EF781D28AF65A7005AE210 /* JoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinView.swift; sourceTree = "<group>"; };
+		85EF782028AF663A005AE210 /* DarkGrayRadiusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkGrayRadiusTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85EF782428AF6A56005AE210 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,43 @@
 		859F235528AF6290006BE83C /* Netflix_Layout */ = {
 			isa = PBXGroup;
 			children = (
+				85EF781C28AF6548005AE210 /* Join */,
+				85EF781728AF637D005AE210 /* Utility */,
 				859F235628AF6290006BE83C /* AppDelegate.swift */,
 				859F235828AF6290006BE83C /* SceneDelegate.swift */,
-				859F235A28AF6290006BE83C /* ViewController.swift */,
 				859F235C28AF6290006BE83C /* Main.storyboard */,
 				859F235F28AF6291006BE83C /* Assets.xcassets */,
 				859F236128AF6291006BE83C /* LaunchScreen.storyboard */,
 				859F236428AF6291006BE83C /* Info.plist */,
 			);
 			path = Netflix_Layout;
+			sourceTree = "<group>";
+		};
+		85EF781728AF637D005AE210 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				85EF781F28AF6603005AE210 /* CustomView */,
+				85EF781828AF6391005AE210 /* BaseViewController.swift */,
+				85EF781A28AF64A5005AE210 /* BaseView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		85EF781C28AF6548005AE210 /* Join */ = {
+			isa = PBXGroup;
+			children = (
+				859F235A28AF6290006BE83C /* JoinViewController.swift */,
+				85EF781D28AF65A7005AE210 /* JoinView.swift */,
+			);
+			path = Join;
+			sourceTree = "<group>";
+		};
+		85EF781F28AF6603005AE210 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				85EF782028AF663A005AE210 /* DarkGrayRadiusTextField.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +121,9 @@
 			dependencies = (
 			);
 			name = Netflix_Layout;
+			packageProductDependencies = (
+				85EF782328AF6A56005AE210 /* SnapKit */,
+			);
 			productName = Netflix_Layout;
 			productReference = 859F235328AF6290006BE83C /* Netflix_Layout.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +152,9 @@
 				Base,
 			);
 			mainGroup = 859F234A28AF6290006BE83C;
+			packageReferences = (
+				85EF782228AF6A56005AE210 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 859F235428AF6290006BE83C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				859F235B28AF6290006BE83C /* ViewController.swift in Sources */,
+				859F235B28AF6290006BE83C /* JoinViewController.swift in Sources */,
+				85EF781928AF6391005AE210 /* BaseViewController.swift in Sources */,
+				85EF781B28AF64A5005AE210 /* BaseView.swift in Sources */,
+				85EF782128AF663A005AE210 /* DarkGrayRadiusTextField.swift in Sources */,
 				859F235728AF6290006BE83C /* AppDelegate.swift in Sources */,
+				85EF781E28AF65A7005AE210 /* JoinView.swift in Sources */,
 				859F235928AF6290006BE83C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +406,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		85EF782228AF6A56005AE210 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		85EF782328AF6A56005AE210 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85EF782228AF6A56005AE210 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 859F234B28AF6290006BE83C /* Project object */;
 }
